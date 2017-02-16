@@ -33,6 +33,10 @@ document is confidential and proprietary to Microsoft. It is disclosed and can b
             return document.getElementById("useMic").checked;
         }
 
+        function useFile() {
+            return document.getElementById("useFile").checked;
+        }
+			
         function getMode() {
             return Microsoft.CognitiveServices.SpeechRecognition.SpeechRecognitionMode.shortPhrase;
         }
@@ -69,8 +73,10 @@ document is confidential and proprietary to Microsoft. It is disclosed and can b
             var luisCfg = getLuisConfig();
 
             clearText();
+			if (useFile()) {console.log ( 'File was clicked' );}
 
             if (useMic()) {
+			console.log ( 'Mic was clicked' );
                 if (luisCfg) {
                     client = Microsoft.CognitiveServices.SpeechRecognition.SpeechRecognitionServiceFactory.createMicrophoneClientWithIntent(
                         getLanguage(),
@@ -133,10 +139,14 @@ document is confidential and proprietary to Microsoft. It is disclosed and can b
 </head>
 <body style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
     <table width="100%">
-        <tr><td/><td><h1>Speech.JS</h1><h2>Microsoft Cognitive Services</h2></td></tr>
+        <tr><td/><td><h1>Speech.JS Test</h1><h2>Microsoft Cognitive Services</h2></td></tr>
         <tr>
             <td align="right"/>
             <td><input id="useMic" type="checkbox">Use Microphone</td>
+        </tr>
+			 <tr>
+            <td align="right"/>
+            <td><input id="useFile" type="checkbox">Use File</td>
         </tr>
         <tr>
             <td align="right"><A href="https://www.microsoft.com/cognitive-services/en-us/sign-up" target="_blank">Subscription</A>:</td>
