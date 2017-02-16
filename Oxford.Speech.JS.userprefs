@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{29C04069-D329-46B1-984A-664275B77C0A}|">
+  <MonoDevelop.Ide.ItemProperties.Oxford.Speech.JS PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="index.htm">
+    <Files>
+      <File FileName="index.htm" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
